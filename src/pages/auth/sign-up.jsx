@@ -1,3 +1,5 @@
+import Facebookicon from "@/assets/icons/facebook-icon";
+import Googleicon from "@/assets/icons/google-icon";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import {
@@ -15,11 +17,12 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router";
 
-export default function SignIn() {
+export default function SignUp() {
   const form = useForm({
     resolver: zodResolver(signInSchema),
 
     defaultValues: {
+      username: "",
       email: "",
       password: "",
     },
@@ -30,21 +33,34 @@ export default function SignIn() {
       <div className="border px-6 md:px-8 w-full max-w-md md:w-[460px] h-auto md:h-[500px] lg:h-[650px] bg-white flex flex-col justify-center gap-6 py-8 md:py-0">
         <div className="space-y-5 text-center md:text-left">
           <h2 className="font-semibold text-3xl leading-normal text-black">
-            Login
+            Signup
           </h2>
           <p className="text-foreground/70 ">
-            <span>Welcome to the log in page </span>
+            <span>Let’s Get Started! </span>
           </p>
         </div>
 
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(SignIn)} className="space-y-4">
+          <form onSubmit={form.handleSubmit(SignUp)} className="space-y-4">
             <FormField
               control={form.control}
               name="email"
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Username</FormLabel>
+                  <FormControl>
+                    <Input placeholder="User Name" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="email"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Email</FormLabel>
                   <FormControl>
                     <Input placeholder="Email Address" {...field} />
                   </FormControl>
@@ -93,15 +109,22 @@ export default function SignIn() {
               <Button className="w-full " variant={"destructive"} type="submit">
                 Sign In
               </Button>
-              <p className="text-foreground/70 text-start ">
-                <span className="text-xs">New User? </span>
-                <Link
-                  to="/auth/sign-up"
-                  className="font-medium text-black text-sm"
-                >
-                  Sign Up
-                </Link>
+              <p className="text-foreground/70 text-center ">
+                <span className="text-xs">
+                  Or, Sign Up with another account{" "}
+                </span>
               </p>
+
+              <div>
+                <div className="flex justify-center gap-2 mb-2 mt-5">
+                  <Googleicon />{" "}
+                  <p className="font-semibold">Log in with Google</p>
+                </div>
+                <div className="flex justify-center gap-2">
+                  <Facebookicon />{" "}
+                  <p className="font-semibold">Log in with Google</p>
+                </div>
+              </div>
             </div>
           </form>
         </Form>

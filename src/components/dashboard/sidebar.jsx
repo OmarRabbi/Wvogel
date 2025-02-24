@@ -40,7 +40,7 @@ function Sidebar() {
                         <Link
                             key={index}
                             to={sidebar.path}
-                            className={`flex items-center gap-3 px-4 py-3 rounded-[4px] ${pathname === sidebar.path || pathname.startsWith('/dashboard/') ? 'bg-[#E52B4233] border-[#E52B42]' : ''}`}>
+                            className={`flex items-center gap-3 px-4 py-3 rounded-[4px] ${pathname === sidebar.path ? 'bg-[#E52B4233] border-[#E52B42]' : ''}`}>
                             <img src={sidebar.icon} alt="icon" />
                             <p>{sidebar.label}</p>
                         </Link>

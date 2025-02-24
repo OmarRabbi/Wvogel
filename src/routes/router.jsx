@@ -30,22 +30,19 @@ export const router = createBrowserRouter([
     element: <DashboardLayout />,
     children: [
       {
-        path: "",
-        element: <h1>Dashboard</h1>,
-      {
         index: true,
         element: <Profile />,
       },
       {
-        path: 'edit-profile',
-        element: <ProfileInformation/>
+        path: "edit-profile",
+        element: <ProfileInformation />,
       },
       {
-        path: 'chat',
+        path: "chat",
         element: <Chat />,
       },
       {
-        path: 'notification',
+        path: "notification",
         element: <Notification />,
       },
     ],
@@ -60,24 +57,4 @@ export const router = createBrowserRouter([
       },
     ],
   },
-  {
-    path: "/sign-in",
-    element: <SignIn />,
-  },
 ]);
-  {
-    path: '/',
-    element: <MainLayout />,
-    children: [
-      {
-        index: true,
-        element: <Home />,
-      },
-
-    ]
-  },
-  {
-    path: '/sign-in',
-    element: <SignIn />,
-  }
-])

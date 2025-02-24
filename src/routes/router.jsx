@@ -44,10 +44,6 @@ export const router = createBrowserRouter([
       {
         path: "notification",
         element: <Notification />,
-=========
-        path: "",
-        element: <h1>Dashboard</h1>,
->>>>>>>>> Temporary merge branch 2
       },
     ],
   },

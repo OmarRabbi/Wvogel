@@ -37,14 +37,13 @@ function Sidebar() {
             <div className='flex flex-col gap-2'>
                 {
                     sidebars.map((sidebar, index) => (
-                        <NavLink
+                        <Link
                             key={index}
                             to={sidebar.path}
-                            end
-                            className={({ isActive }) => `flex items-center gap-3 px-4 py-3 rounded-[4px]  ${isActive ? 'bg-[#E52B4233] border-[#E52B42]' : ''}`}>
+                            className={`flex items-center gap-3 px-4 py-3 rounded-[4px] ${pathname === sidebar.path || pathname.startsWith('/dashboard/') ? 'bg-[#E52B4233] border-[#E52B42]' : ''}`}>
                             <img src={sidebar.icon} alt="icon" />
-                            <p className='text-base font-medium leading-6 text-header-foreground'>{sidebar.label}</p>
-                        </NavLink>
+                            <p>{sidebar.label}</p>
+                        </Link>
                     ))}
             </div>
         </div>
@@ -53,10 +52,13 @@ function Sidebar() {
 
 export default Sidebar
 
-// <Link
-//     key={index}
-//     to={sidebar.path}
-//     className={`flex items-center gap-3 px-4 py-3 rounded-[4px] border border-black ${pathname === sidebar.path ? 'bg-[#E52B4233] border-[#E52B42]' : ''}`}>
-//         <img src={sidebar.icon} alt="icon" />
-//     <p>{sidebar.label}</p>
-// </Link>
+
+
+{/* <NavLink
+                            key={index}
+                            to={sidebar.path}
+                            end
+                            className={({ isActive }) => `flex items-center gap-3 px-4 py-3 rounded-[4px]  ${isActive ? 'bg-[#E52B4233] border-[#E52B42]' : ''}`}>
+                            <img src={sidebar.icon} alt="icon" />
+                            <p className='text-base font-medium leading-6 text-header-foreground'>{sidebar.label}</p>
+                        </NavLink> */}

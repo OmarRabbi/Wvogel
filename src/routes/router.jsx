@@ -34,23 +34,24 @@ export const router = createBrowserRouter([
         element: <Profile />,
       },
       {
-        path: 'edit-profile',
-        element: <ProfileInformation/>
+        path: "edit-profile",
+        element: <ProfileInformation />,
       },
       {
-        path: 'chat',
+        path: "chat",
         element: <Chat />,
       },
       {
-        path: 'notification',
+        path: "notification",
         element: <Notification />,
+=========
         path: "",
         element: <h1>Dashboard</h1>,
+>>>>>>>>> Temporary merge branch 2
       },
     ],
   },
   {
-    path: '/',
     path: "/",
     element: <MainLayout />,
     children: [
@@ -58,11 +59,6 @@ export const router = createBrowserRouter([
         index: true,
         element: <Home />,
       },
-
-    ]
+    ],
   },
-  {
-    path: '/sign-in',
-    element: <SignIn />,
-  }
-])
+]);

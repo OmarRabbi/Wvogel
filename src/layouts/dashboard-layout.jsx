@@ -12,6 +12,7 @@ export default function DashboardLayout() {
         {/* Sidebar on the left */}
         <div className="basis-[15%]">
           <Sidebar/>
+          
         </div>
         {/* Main Content (Dashboard) */}
         <main className="basis-[85%] flex-grow bg-[#F0F5FF] p-6 overflow-y-auto">

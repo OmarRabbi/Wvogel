@@ -12,7 +12,7 @@ function Sidebar() {
         {
             label: 'My Profile',
             icon: profileIcon,
-            path: '/dashboard',
+            path: '/dashboard/',
         },
         {
             label: 'Chat',

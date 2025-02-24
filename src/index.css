@@ -8,7 +8,6 @@
     --background: 45 44% 95%; /* website background color set  #F7F4ED*/
     --foreground: 220 3% 36%; /* website text color set  #5A5C5F*/
     --header-foreground: 0 0% 8%; /* website header text color set  */
-    --background: 45 44% 95%; /* website background color set  */
     --foreground: 220 3% 36%; /* website text color set  */
     --navbg: 240 2% 23%;
     --card: 0 0% 100%;
@@ -24,7 +23,7 @@
     --muted-foreground: 240 3.8% 46.1%;
     --accent: 240 4.8% 95.9%;
     --accent-foreground: 240 5.9% 10%;
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 355 77% 55%; /* website button color set  #E6273E*/
     --destructive-foreground: 0 0% 98%;
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;

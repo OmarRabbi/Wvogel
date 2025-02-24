@@ -6,6 +6,7 @@ import MainLayout from "@/layouts/main-layout";
 import Profile from "@/pages/dashboard/profile";
 import Chat from "@/pages/dashboard/chat";
 import Notification from "@/pages/dashboard/notification";
+import ProfileInformation from "@/pages/dashboard/profileInformation";
 
 export const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ export const router = createBrowserRouter([
       {
         index: true,
         element: <Profile />,
+      },
+      {
+        path: 'edit-profile',
+        element: <ProfileInformation/>
       },
       {
         path: 'chat',

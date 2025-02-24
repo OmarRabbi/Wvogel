@@ -1,7 +1,6 @@
-
 import Navbar from "@/components/shared/navbar";
-
 import { Outlet } from "react-router";
+import Sidebar from "@/components/dashboard/sidebar";
 
 export default function DashboardLayout() {
   return (
@@ -11,10 +10,11 @@ export default function DashboardLayout() {
 
       <div className="flex flex-grow">
         {/* Sidebar on the left */}
-        {/* <Sidebar /> */}
-
+        <div className="basis-[15%]">
+          <Sidebar/>
+        </div>
         {/* Main Content (Dashboard) */}
-        <main className="flex-grow bg-[#F0F5FF] p-6 overflow-y-auto">
+        <main className="basis-[85%] flex-grow bg-[#F0F5FF] p-6 overflow-y-auto">
           <Outlet />
         </main>
       </div>

@@ -4,15 +4,15 @@
 
 @layer base {
   :root {
-    --header-foreground: 0 0% 8%; /* website header text color set  */
-    --background: 45 44% 95%; /* website background color set  */
-    --foreground: 220 3% 36%; /* website text color set  */
+    --header-foreground: 0 0% 8%; /* website header text color set  #141414 */
+    --background: 45 44% 95%; /* website background color set  #F7F4ED*/
+    --foreground: 220 3% 36%; /* website text color set  #5A5C5F*/
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
     --primary: 240 2% 23% 1; /* website primary color set  */
-    --primary-foreground: 220 14% 89%; /* website primary text color set  */
+    --primary-foreground: 220 14% 89%; /* website primary text color set  #DFE1E6*/
     --header-primary-foreground: 0 0% 100%; /* website header primary text color set  */
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;

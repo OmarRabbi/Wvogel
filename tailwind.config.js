@@ -14,6 +14,7 @@ export default {
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
+			"header-foreground": 'hsl(var(--header-foreground))', /* website header text color set  */
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
@@ -24,7 +25,8 @@ export default {
   			},
   			primary: {
   				DEFAULT: 'hsl(var(--primary))',
-  				foreground: 'hsl(var(--primary-foreground))'
+  				foreground: 'hsl(var(--primary-foreground))',
+				"header-foreground": 'hsl(var(--header-primary-foreground))', /* website header primary text color set  */
   			},
   			secondary: {
   				DEFAULT: 'hsl(var(--secondary))',

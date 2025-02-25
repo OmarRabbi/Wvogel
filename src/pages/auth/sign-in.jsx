@@ -27,7 +27,7 @@ export default function SignIn() {
 
   return (
     <div className="flex flex-col md:flex-row justify-center items-center gap-10  min-h-[calc(100svh-116px)] container mx-auto px-4 md:max-w-[1272px]">
-      <div className="border px-6 md:px-8 w-full max-w-md md:w-[460px] h-auto md:h-[500px] lg:h-[650px] bg-white flex flex-col justify-center gap-6 py-8 md:py-0">
+      <div className="border px-6 md:px-8 w-full max-w-md md:w-[460px] h-auto md:h-[500px] lg:h-[550px] bg-white flex flex-col justify-center gap-6 py-8 md:py-0">
         <div className="space-y-5 text-center md:text-left">
           <h2 className="font-semibold text-3xl leading-normal text-black">
             Login

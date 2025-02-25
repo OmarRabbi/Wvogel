@@ -1,9 +1,17 @@
-import React from 'react'
+import Emailupdate from "./emailupdate";
+import Passwordupdate from "./passwordupdate";
+import PersonalInformation from "./personalInformation";
 
-function ProfileInformation() {
+const ProfileInformation = () => {
   return (
-    <div>ProfileInformation</div>
-  )
-}
+    <>
+      <div className="flex flex-col gap-5">
+        <PersonalInformation />
+        <Emailupdate />
+        <Passwordupdate />
+      </div>
+    </>
+  );
+};
 
-export default ProfileInformation
+export default ProfileInformation;

@@ -56,7 +56,7 @@ function Notification() {
   return (
     <div className='p-8'>
       <h2 className='text-[#303030] text-xl md:text-2xl lg:text-3xl font-bold leading-[132%] tracking-[-0.24px] mb-8'>Notification</h2>
-      <div className='px-4 bg-[#FFF] rounded-[4px] w-[652px] aspect-[652/852]'>
+      <div className='px-4 bg-[#FFF] rounded-[4px] max-w-[652px] w-full'>
         {
           profiles.map((profile, index) => (
             <div key={index} className='flex flex-col'>

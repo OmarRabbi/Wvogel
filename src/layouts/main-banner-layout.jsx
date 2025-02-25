@@ -27,7 +27,7 @@ const MainBannerLayout = () => {
       <div>
         <Navbar />
         {location.pathname !== "/" && <Banner bannertext={bannerText} />}
-        <main>
+        <main className="pb-20 pt-20">
           <Outlet />
         </main>
         <Footer />

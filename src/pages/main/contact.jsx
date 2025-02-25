@@ -39,7 +39,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="flex gap-5">
+        <div className="flex gap-5 mt-20">
           <div className="flex flex-col gap-5">
             <div className="flex gap-5">
               <div>
@@ -82,7 +82,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="bg-navbg p-10  w-full rounded">
+          <div className="bg-navbg p-20  w-full rounded ">
             <Form {...form}>
               <form onSubmit={form.handleSubmit(Contact)} className="space-y-4">
                 <FormField

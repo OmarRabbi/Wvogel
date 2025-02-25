@@ -18,7 +18,7 @@ const socialIcons = [
 
 const Footer = () => {
   return (
-    <footer className="w-full py-10 bg-navbg bottom-0 absolute">
+    <footer className="w-full py-10 bg-navbg bottom-0 relative">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center text-center">
           <a href="#" className="mb-4">

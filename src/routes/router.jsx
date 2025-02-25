@@ -9,6 +9,8 @@ import Notification from "@/pages/dashboard/notification";
 import ProfileInformation from "@/pages/dashboard/profileInformation";
 import AuthLayout from "@/layouts/auth-layout";
 import SignUp from "@/pages/auth/sign-up";
+import MainBannerLayout from "@/layouts/main-banner-layout";
+import Contact from "@/pages/main/contact";
 
 export const router = createBrowserRouter([
   {
@@ -47,13 +49,23 @@ export const router = createBrowserRouter([
       },
     ],
   },
+  // {
+  //   path: "/",
+  //   element: <MainLayout />,
+  //   children: [
+  //     {
+  //       index: true,
+  //       element: <Home />,
+  //     },
+  //   ],
+  // },
   {
     path: "/",
-    element: <MainLayout />,
+    element: <MainBannerLayout />,
     children: [
       {
-        index: true,
-        element: <Home />,
+        path: "contact",
+        element: <Contact />,
       },
     ],
   },

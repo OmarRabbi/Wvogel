@@ -118,8 +118,8 @@ function Chat() {
 
 
   return (
-    <div className='flex items-start justify-between flex-col lg:flex-row gap-4'>
-      <div className='basis-[35%] w-full'>
+    <div className='flex items-start justify-between flex-col lg:flex-row gap-4 p-8'>
+      <div className='basis-[35%] w-full rounded'>
         <div className='w-full px-5 py-8 flex flex-col gap-6 bg-[#FFF] rounded'>
           <h2 className='text-[#303030] text-xl md:text-2xl lg:text-3xl font-bold leading-[132%] tracking-[-0.24px]'>People</h2>
           {
@@ -144,7 +144,7 @@ function Chat() {
         </div>
         <Button variant='destructive' className='p-[10px] w-full mt-5'>Create a new group</Button>
       </div>
-      <div className='basis-[65%] bg-[#FFF] px-5 py-8 w-full'>
+      <div className='basis-[65%] bg-[#FFF] px-5 py-8 w-full rounded'>
         <div className='flex flex-col gap-3 mb-6'>
           <div className='flex items-center justify-between'>
             <div className='flex items-center gap-4'>

@@ -21,7 +21,7 @@ const Navbar = () => {
     <nav className="bg-navbg p-4">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <Link to="/">
+        <Link to="/dashboard">
           <img src={logo} alt="Logo" className="h-12" />
         </Link>
 
@@ -36,7 +36,7 @@ const Navbar = () => {
 
         {/* Icons & Mobile Menu Button */}
         <div className="flex items-center gap-5 text-[#FFF5EB]">
-          <Bell className="cursor-pointer" />
+          <Link to={`/dashboard/notification`}><Bell className="cursor-pointer" /></Link>
           <CircleUserRound className="cursor-pointer" />
 
           {/* Mobile Menu Toggle */}

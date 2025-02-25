@@ -33,7 +33,7 @@ function Profile() {
           </div>
         </div>
       </div>
-      <Link to={`/dashboard/edit-profile/`}><Button variant='destructive' size='dashboard-button' className='text-base font-meduium leading-6'>Edit Profile</Button></Link>
+      <Link to={`/dashboard/profile/edit-profile/`}><Button variant='destructive' size='dashboard-button' className='text-base font-meduium leading-6'>Edit Profile</Button></Link>
     </div>
   )
 }

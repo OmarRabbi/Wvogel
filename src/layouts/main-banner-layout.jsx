@@ -18,6 +18,9 @@ const MainBannerLayout = () => {
     case "/beastmodestore":
       bannerText = "Store";
       break;
+    case "/winphoto":
+      bannerText = "Win Photo";
+      break;
     default:
       bannerText = "Welcome";
   }

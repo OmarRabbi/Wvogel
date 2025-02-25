@@ -12,7 +12,7 @@ const Navbar = () => {
     { title: "Horses", url: "/" },
     { title: "Offerings & Partnerships", url: "/" },
     { title: "Races", url: "/" },
-    { title: "Win Photos", url: "/" },
+    { title: "Win Photos", url: "/winphoto" },
     { title: "Store", url: "/" },
     { title: "Contact", url: "/contact" },
   ];

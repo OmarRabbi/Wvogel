@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 
 const Bestmodestorecard = ({ cardsData }) => {
-  return (
+  const pathname = useLocation()  return (
     <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
       {cardsData.map((card, index) => (
         <div key={index} className="max-w-sm mx-auto">

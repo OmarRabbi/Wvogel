@@ -12,6 +12,7 @@ import SignUp from "@/pages/auth/sign-up";
 import MainBannerLayout from "@/layouts/main-banner-layout";
 import Contact from "@/pages/main/contact";
 import Beastmode from "@/pages/main/beastmode";
+import Winphoto from "@/pages/main/winphoto";
 
 export const router = createBrowserRouter([
   {
@@ -71,6 +72,10 @@ export const router = createBrowserRouter([
       {
         path: "beastmodestore",
         element: <Beastmode />,
+      },
+      {
+        path: "winphoto",
+        element: <Winphoto />,
       },
     ],
   },

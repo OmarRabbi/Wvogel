@@ -14,7 +14,7 @@ const Navbar = () => {
     { title: "Races", url: "/" },
     { title: "Win Photos", url: "/" },
     { title: "Store", url: "/" },
-    { title: "Contact", url: "/" },
+    { title: "Contact", url: "/contact" },
   ];
 
   return (

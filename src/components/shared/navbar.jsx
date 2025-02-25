@@ -18,7 +18,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-navbg p-4">
+    <nav className="bg-navbg py-[13px] h-[90px] flex items-center">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link to="/dashboard">

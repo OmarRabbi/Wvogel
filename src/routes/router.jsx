@@ -69,6 +69,10 @@ export const router = createBrowserRouter([
     element: <MainBannerLayout />,
     children: [
       {
+        path: '/',
+        element: <Home/>
+      },
+      {
         path: "contact",
         element: <Contact />,
       },

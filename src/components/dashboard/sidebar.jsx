@@ -12,7 +12,7 @@ function Sidebar() {
         {
             label: 'My Profile',
             icon: profileIcon,
-            path: '/dashboard/',
+            path: '/dashboard/profile',
         },
         {
             label: 'Chat',
@@ -29,21 +29,27 @@ function Sidebar() {
             icon: logoutIcon,
             path: '/auth/logout',
         },
+      
     ]
 
 
+    // const isDashboardActive = (pathname) => {
+    //     return (
+    //       pathname.includes("/dashboard/edit-profile/")
+    //     );
+    //   };
     return (
         <div className='w-full p-4 sm:p-6 lg:p-8'>
             <div className='flex flex-col gap-2'>
                 {
                     sidebars.map((sidebar, index) => (
-                        <Link
-                            key={index}
-                            to={sidebar.path}
-                            className={`flex items-center gap-3 px-4 py-3 rounded-[4px] ${pathname === sidebar.path ? 'bg-[#E52B4233] border-[#E52B42] text-[#141414]' : 'text-[#404A60]'}`}>
-                            <img src={sidebar.icon} alt="icon" />
-                            <p>{sidebar.label}</p>
-                        </Link>
+                        <NavLink
+                        key={index}
+                        to={sidebar.path}
+                        className={({ isActive }) => `flex items-center gap-3 px-4 py-3 rounded-[4px]  ${isActive ? 'bg-[#E52B4233] border-[#E52B42]' : ''}`}>
+                        <img src={sidebar.icon} alt="icon" />
+                        <p className='text-base font-medium leading-6 text-header-foreground'>{sidebar.label}</p>
+                    </NavLink>
                     ))}
             </div>
         </div>
@@ -54,11 +60,12 @@ export default Sidebar
 
 
 
-{/* <NavLink
-                            key={index}
-                            to={sidebar.path}
-                            end
-                            className={({ isActive }) => `flex items-center gap-3 px-4 py-3 rounded-[4px]  ${isActive ? 'bg-[#E52B4233] border-[#E52B42]' : ''}`}>
-                            <img src={sidebar.icon} alt="icon" />
-                            <p className='text-base font-medium leading-6 text-header-foreground'>{sidebar.label}</p>
-                        </NavLink> */}
+
+
+                    //     <Link
+                    //     key={index}
+                    //     to={sidebar.path}
+                    //     className={`flex items-center gap-3 px-4 py-3 rounded-[4px] ${(pathname === sidebar.path) || (isDashboardActive(sidebar.path)) ? 'bg-[#E52B4233] border-[#E52B42] text-[#141414]' : 'text-[#404A60]'}`}>
+                    //     <img src={sidebar.icon} alt="icon" />
+                    //     <p>{sidebar.label}</p>
+                    // </Link>

@@ -11,6 +11,7 @@ import AuthLayout from "@/layouts/auth-layout";
 import SignUp from "@/pages/auth/sign-up";
 import MainBannerLayout from "@/layouts/main-banner-layout";
 import Contact from "@/pages/main/contact";
+import Beastmode from "@/pages/main/beastmode";
 
 export const router = createBrowserRouter([
   {
@@ -66,6 +67,10 @@ export const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact />,
+      },
+      {
+        path: "beastmodestore",
+        element: <Beastmode />,
       },
     ],
   },

@@ -82,15 +82,18 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="bg-navbg p-20  w-full rounded ">
+          <div className="bg-navbg p-20  w-[60%] rounded ">
             <Form {...form}>
-              <form onSubmit={form.handleSubmit(Contact)} className="space-y-4">
+              <form
+                onSubmit={form.handleSubmit(Contact)}
+                className="space-y-4 max-w-2xl mx-auto"
+              >
                 <FormField
                   control={form.control}
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Username</FormLabel>
+                      <FormLabel className="text-white">Username</FormLabel>
                       <FormControl>
                         <Input
                           placeholder="Email Address"
@@ -107,7 +110,7 @@ const Contact = () => {
                   name="password"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Password</FormLabel>
+                      <FormLabel className="text-white">Password</FormLabel>
                       <FormControl>
                         <Input
                           type="password"
@@ -125,7 +128,7 @@ const Contact = () => {
                   name="password"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Password</FormLabel>
+                      <FormLabel className="text-white">Password</FormLabel>
                       <FormControl>
                         <Input
                           type="password"
@@ -143,7 +146,7 @@ const Contact = () => {
                   name="password"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Password</FormLabel>
+                      <FormLabel className="text-white">Password</FormLabel>
                       <FormControl>
                         <Input
                           type="password"
@@ -163,7 +166,7 @@ const Contact = () => {
                     variant={"destructive"}
                     type="submit"
                   >
-                    Sign In
+                    Submit
                   </Button>
                 </div>
               </form>

@@ -8,7 +8,7 @@ const Navbar = () => {
 
   const navitems = [
     { title: "Home", url: "/" },
-    { title: "About Beast Mode", url: "/" },
+    { title: "About Beast Mode", url: "/beastmodestore" },
     { title: "Horses", url: "/" },
     { title: "Offerings & Partnerships", url: "/" },
     { title: "Races", url: "/" },

@@ -15,8 +15,8 @@ const MainBannerLayout = () => {
     case "/contact":
       bannerText = "Contact Us";
       break;
-    case "/services":
-      bannerText = "Our Services";
+    case "/beastmodestore":
+      bannerText = "Store";
       break;
     default:
       bannerText = "Welcome";

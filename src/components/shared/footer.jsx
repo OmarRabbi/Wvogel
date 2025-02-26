@@ -3,7 +3,7 @@ import logo from "../../assets/icons/logo-icon.svg";
 
 const links = [
   { name: "Campaigns", href: "#" },
-  { name: "About Beast Mode", href: "#" },
+  { name: "AboutUs", href: "/about" },
   { name: "Privacy", href: "#" },
   { name: "Home", href: "#" },
   { name: "Contact", href: "#" },

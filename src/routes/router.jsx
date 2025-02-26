@@ -14,6 +14,7 @@ import Contact from "@/pages/main/contact";
 import Beastmode from "@/pages/main/beastmode";
 import Winphoto from "@/pages/main/winphoto";
 import Horses from "@/pages/main/horses";
+import Aboutus from "@/pages/main/aboutus";
 
 export const router = createBrowserRouter([
   {
@@ -89,6 +90,10 @@ export const router = createBrowserRouter([
       {
         path: "horses",
         element: <Horses />,
+      },
+      {
+        path: "about",
+        element: <Aboutus />,
       },
     ],
   },

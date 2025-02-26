@@ -14,6 +14,7 @@ import {
 import ContactBanner from "@/components/main/contact-banner";
 import bgImage from "@/assets/images/home-beast-mode-contact.jpg";
 import logo from "@/assets/images/home-logo.png";
+import Beastmode from "@/components/shared/beastmodehome";
 
 function Home() {
   const carouselCardsData = [

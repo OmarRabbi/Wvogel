@@ -50,7 +50,11 @@ const Horses = () => {
             </h1>
           </div>
           <div>
-            <Horsescard cardsData={cardsData} />
+            <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+              {cardsData.map((cardData, index) => (
+                <Horsescard key={index} cardData={cardData} />
+              ))}
+            </div>
             <div className="flex justify-start gap-10 mt-10 container mx-auto">
               <button className="bg-white text-destructive font-bold py-3 px-20 rounded-md">
                 See All

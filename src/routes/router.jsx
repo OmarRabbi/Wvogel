@@ -1,6 +1,6 @@
 import SignIn from "@/pages/auth/sign-in";
 import Home from "@/pages/main/home";
-import { createBrowserRouter } from "react-router";
+import { createBrowserRouter, Navigate } from "react-router";
 import DashboardLayout from "@/layouts/dashboard-layout";
 import MainLayout from "@/layouts/main-layout";
 import Profile from "@/pages/dashboard/profile";
@@ -13,6 +13,7 @@ import MainBannerLayout from "@/layouts/main-banner-layout";
 import Contact from "@/pages/main/contact";
 import Beastmode from "@/pages/main/beastmode";
 import Winphoto from "@/pages/main/winphoto";
+
 
 export const router = createBrowserRouter([
   {
@@ -35,10 +36,14 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
+        element: <Navigate to='/dashboard/profile'/>,
+      },
+      {
+        path: 'profile',
         element: <Profile />,
       },
       {
-        path: "edit-profile",
+        path: "profile/edit-profile",
         element: <ProfileInformation />,
       },
       {
@@ -65,6 +70,10 @@ export const router = createBrowserRouter([
     path: "/",
     element: <MainBannerLayout />,
     children: [
+      {
+        path: '/',
+        element: <Home/>
+      },
       {
         path: "contact",
         element: <Contact />,

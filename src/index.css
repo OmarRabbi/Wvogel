@@ -14,7 +14,7 @@
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 240 2% 23% 1; /* website primary color set  */
+    --primary: 240 2% 23%; /* website primary color set  */
     --primary-foreground: 220 14% 89%; /* website primary text color set  #DFE1E6*/
     --header-primary-foreground: 0 0% 100%; /* website header primary text color set  */
     --secondary: 240 4.8% 95.9%;

@@ -30,7 +30,7 @@ const MainBannerLayout = () => {
       <div>
         <Navbar />
         {location.pathname !== "/" && <Banner bannertext={bannerText} />}
-        <main className="pb-20 pt-20">
+        <main className="">
           <Outlet />
         </main>
         <Footer />

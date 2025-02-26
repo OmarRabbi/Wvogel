@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 
+// eslint-disable-next-line react/prop-types
 const Bestmodestorecard = ({ cardsData }) => {
-  const pathname = useLocation()  return (
+  return (
     <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
       {cardsData.map((card, index) => (
         <div key={index} className="max-w-sm mx-auto">

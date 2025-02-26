@@ -10,7 +10,7 @@ const Navbar = () => {
     { title: "Home", url: "/" },
     { title: "About Beast Mode", url: "/beastmodestore" },
     { title: "Horses", url: "/horses" },
-    { title: "Offerings & Partnerships", url: "/" },
+    { title: "Offerings & Partnerships", url: "/ownerandpartnership" },
     { title: "Races", url: "/" },
     { title: "Win Photos", url: "/winphoto" },
     { title: "Store", url: "/" },

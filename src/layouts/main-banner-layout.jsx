@@ -24,6 +24,9 @@ const MainBannerLayout = () => {
     case "/horses":
       bannerText = "Available Horses";
       break;
+    case "/ownerandpartnership":
+      bannerText = " Offerings & Partnerships";
+      break;
     default:
       bannerText = "Welcome";
   }

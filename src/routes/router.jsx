@@ -2,7 +2,7 @@ import SignIn from "@/pages/auth/sign-in";
 import Home from "@/pages/main/home";
 import { createBrowserRouter, Navigate } from "react-router";
 import DashboardLayout from "@/layouts/dashboard-layout";
-import MainLayout from "@/layouts/main-layout";
+
 import Profile from "@/pages/dashboard/profile";
 import Chat from "@/pages/dashboard/chat";
 import Notification from "@/pages/dashboard/notification";
@@ -14,6 +14,8 @@ import Contact from "@/pages/main/contact";
 import Beastmode from "@/pages/main/beastmode";
 import Winphoto from "@/pages/main/winphoto";
 import Horses from "@/pages/main/horses";
+import Aboutus from "@/pages/main/aboutus";
+import Partnership from "@/pages/main/partnership";
 
 export const router = createBrowserRouter([
   {
@@ -56,16 +58,7 @@ export const router = createBrowserRouter([
       },
     ],
   },
-  // {
-  //   path: "/",
-  //   element: <MainLayout />,
-  //   children: [
-  //     {
-  //       index: true,
-  //       element: <Home />,
-  //     },
-  //   ],
-  // },
+
   {
     path: "/",
     element: <MainBannerLayout />,
@@ -89,6 +82,14 @@ export const router = createBrowserRouter([
       {
         path: "horses",
         element: <Horses />,
+      },
+      {
+        path: "about",
+        element: <Aboutus />,
+      },
+      {
+        path: "ownerandpartnership",
+        element: <Partnership />,
       },
     ],
   },

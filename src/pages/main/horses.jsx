@@ -1,5 +1,7 @@
+import { motion } from "framer-motion";
 import horse1 from "../../assets/images/horse1.png";
 import Horsescard from "@/components/main/horsescard";
+
 const Horses = () => {
   const cardsData = [
     {

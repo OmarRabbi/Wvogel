@@ -1,6 +1,3 @@
-import Hero from "@/components/main/home/hero";
-import RacingResult from "@/components/main/home/racingresult";
-import Beastmode from "@/components/shared/beastmodehome";
 import beastMode from "@/assets/images/beast-mode.png";
 import Hero from '@/components/main/home/hero'
 import RacingResult from '@/components/main/home/racingresult'
@@ -72,9 +69,9 @@ function Home() {
   ]
 
 
-  return (
-    <div className="text-primary-header-foreground bg-background">
-      <Hero />
+  return (     
+    <div className='text-primary-header-foreground bg-background'>
+       <Hero />
       <RacingResult />
       <Beastmode
         img={beastMode}
@@ -84,10 +81,6 @@ function Home() {
           "Beast Mode Racing is a premier horse racing syndicate dedicated to bringing the thrill of ownership to enthusiasts around the world. Our carefully curated partnerships and champion horses ensure an unforgettable experience both on and off the track."
         }
       />
-    <div className='text-primary-header-foreground bg-background'>
-      <Hero />
-      <RacingResult />
-      <Beastmode />
       <div className='my-12 w-full mx-auto'>
         <div className='flex flex-col gap-4 mb-10 w-full mx-auto text-center'>
           <h1 className='text-[32px] sm:text-[40px] lg:text-[48px] font-light leading-[102%] w-[40%] mx-auto text-header-foreground'>Our Champions in the Making</h1>

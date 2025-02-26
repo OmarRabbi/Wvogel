@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Button } from "@/components/ui/button";
 
-const Bestmodestorecard = ({ cardsData }) => {
+const Horsescard = ({ cardsData }) => {
   return (
     <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
       {cardsData.map((card, index) => (
@@ -19,19 +19,20 @@ const Bestmodestorecard = ({ cardsData }) => {
                 <h3 className="text-2xl font-semibold text-white">
                   {card.title}
                 </h3>
-                <p className="text-xl font-bold text-red-500">{card.price}</p>
               </div>
 
               <p className="text-sm text-gray-300 mt-2 mb-4">
                 {card.description}
               </p>
 
-              <Button
-                className="w-lg bg-white text-destructive"
-                variant={"destructive"}
-              >
-                Buy Now
-              </Button>
+              <div className="flex justify-between items-start gap-5">
+                <Button className="w-full bg-white text-destructive">
+                  Buy Now
+                </Button>
+                <Button className="w-full bg-transparent text-destructive border border-destructive">
+                  Read More
+                </Button>
+              </div>
             </div>
           </article>
         </div>
@@ -40,4 +41,4 @@ const Bestmodestorecard = ({ cardsData }) => {
   );
 };
 
-export default Bestmodestorecard;
+export default Horsescard;

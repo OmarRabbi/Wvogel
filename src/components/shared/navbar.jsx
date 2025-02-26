@@ -9,7 +9,7 @@ const Navbar = () => {
   const navitems = [
     { title: "Home", url: "/" },
     { title: "About Beast Mode", url: "/beastmodestore" },
-    { title: "Horses", url: "/" },
+    { title: "Horses", url: "/horses" },
     { title: "Offerings & Partnerships", url: "/" },
     { title: "Races", url: "/" },
     { title: "Win Photos", url: "/winphoto" },
@@ -36,7 +36,9 @@ const Navbar = () => {
 
         {/* Icons & Mobile Menu Button */}
         <div className="flex items-center gap-5 text-[#FFF5EB]">
-          <Link to={`/dashboard/notification`}><Bell className="cursor-pointer" /></Link>
+          <Link to={`/dashboard/notification`}>
+            <Bell className="cursor-pointer" />
+          </Link>
           <CircleUserRound className="cursor-pointer" />
 
           {/* Mobile Menu Toggle */}

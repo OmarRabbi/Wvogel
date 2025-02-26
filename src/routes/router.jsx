@@ -13,7 +13,7 @@ import MainBannerLayout from "@/layouts/main-banner-layout";
 import Contact from "@/pages/main/contact";
 import Beastmode from "@/pages/main/beastmode";
 import Winphoto from "@/pages/main/winphoto";
-
+import Horses from "@/pages/main/horses";
 
 export const router = createBrowserRouter([
   {
@@ -36,10 +36,10 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Navigate to='/dashboard/profile'/>,
+        element: <Navigate to="/dashboard/profile" />,
       },
       {
-        path: 'profile',
+        path: "profile",
         element: <Profile />,
       },
       {
@@ -71,8 +71,8 @@ export const router = createBrowserRouter([
     element: <MainBannerLayout />,
     children: [
       {
-        path: '/',
-        element: <Home/>
+        path: "/",
+        element: <Home />,
       },
       {
         path: "contact",
@@ -85,6 +85,10 @@ export const router = createBrowserRouter([
       {
         path: "winphoto",
         element: <Winphoto />,
+      },
+      {
+        path: "horses",
+        element: <Horses />,
       },
     ],
   },

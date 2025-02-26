@@ -21,6 +21,9 @@ const MainBannerLayout = () => {
     case "/winphoto":
       bannerText = "Win Photo";
       break;
+    case "/horses":
+      bannerText = "Available Horses";
+      break;
     default:
       bannerText = "Welcome";
   }

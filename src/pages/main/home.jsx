@@ -14,6 +14,7 @@ import {
 import ContactBanner from '@/components/main/contact-banner';
 import bgImage from '@/assets/images/home-beast-mode-contact.jpg';
 import logo from '@/assets/images/home-logo.png';
+import Testimonial from "@/components/main/home/testimonial";
 
 function Home() {
   const carouselCardsData = [
@@ -102,6 +103,7 @@ function Home() {
         </Carousel>
       </div>
       <ContactBanner bannerData = {contactBannerData} button='Contact'/>
+      <Testimonial/>
     </div>
   );
 }

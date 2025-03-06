@@ -69,6 +69,19 @@ const Contact = () => {
             </div>
             <div className="flex gap-5">
               <div>
+                <PhoneIcon />
+              </div>
+              <div>
+                <h1 className="text-header-foreground font-normal leading-normal">
+                  Address
+                </h1>
+                <p className="text-foreground text-start  text-base font-normal leading-normal max-w-xs">
+                  236 5th SE Avenue, New York NY10000, United States
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-5">
+              <div>
                 <WatchIcon />
               </div>
               <div>

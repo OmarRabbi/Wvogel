@@ -11,7 +11,7 @@ const Navbar = () => {
     { title: "About Beast Mode", url: "/beastmodestore" },
     { title: "Horses", url: "/horses" },
     { title: "Offerings & Partnerships", url: "/ownerandpartnership" },
-    { title: "Races", url: "/" },
+    { title: "Races", url: "/race" },
     { title: "Win Photos", url: "/winphoto" },
     { title: "Store", url: "/" },
     { title: "Contact", url: "/contact" },

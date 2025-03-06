@@ -51,9 +51,9 @@ const Partnership = () => {
               Ready to Join the Legacy
             </h1>
             <p className="text-white text-center font-playfair text-md sm:text-2xl font-light leading-[102%] max-w-4xl mt-3">
-              Whether you're looking to own, partner, or simply immerse yourself
-              in the thrill of racing, Beast Mode Racing has the perfect
-              opportunity for you.
+              Whether you&apos;re looking to own, partner, or simply immerse
+              yourself in the thrill of racing, Beast Mode Racing has the
+              perfect opportunity for you.
             </p>
             <Button className="bg-white text-destructive mt-10">
               Become a Partner

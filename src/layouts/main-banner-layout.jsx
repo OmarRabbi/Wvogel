@@ -24,8 +24,14 @@ const MainBannerLayout = () => {
     case "/horses":
       bannerText = "Available Horses";
       break;
+    case "/race":
+      bannerText = "Races";
+      break;
     case "/ownerandpartnership":
       bannerText = " Offerings & Partnerships";
+      break;
+    case "/horsedetail":
+      bannerText = " Horses Details/Thunder Strike";
       break;
     default:
       bannerText = "Welcome";

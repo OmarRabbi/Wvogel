@@ -25,7 +25,7 @@ const Footer = () => {
             <img src={logo} alt="Logo" className="w-full h-full" />
           </a>
           <p className="max-w-md font-medium text-foreground">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed dov
             eiusmod tempor incididunt.
           </p>
         </div>

@@ -16,6 +16,8 @@ import Winphoto from "@/pages/main/winphoto";
 import Horses from "@/pages/main/horses";
 import Aboutus from "@/pages/main/aboutus";
 import Partnership from "@/pages/main/partnership";
+import Races from "@/pages/main/races";
+import HorseDetail from "@/pages/main/horsedetail";
 
 export const router = createBrowserRouter([
   {
@@ -90,6 +92,14 @@ export const router = createBrowserRouter([
       {
         path: "ownerandpartnership",
         element: <Partnership />,
+      },
+      {
+        path: "race",
+        element: <Races />,
+      },
+      {
+        path: "horsedetail",
+        element: <HorseDetail />,
       },
     ],
   },

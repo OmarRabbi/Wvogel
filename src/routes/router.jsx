@@ -18,6 +18,7 @@ import Aboutus from "@/pages/main/aboutus";
 import Partnership from "@/pages/main/partnership";
 import Races from "@/pages/main/races";
 import HorseDetail from "@/pages/main/horsedetail";
+import Buynow from "@/pages/main/buynow";
 
 export const router = createBrowserRouter([
   {
@@ -101,6 +102,11 @@ export const router = createBrowserRouter([
         path: "horsedetail",
         element: <HorseDetail />,
       },
+      {
+        path: "buynow",
+        element: <Buynow />,
+      },
+      
     ],
   },
 ]);

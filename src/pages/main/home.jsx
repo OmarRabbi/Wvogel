@@ -16,6 +16,8 @@ import bgImage from "@/assets/images/home-beast-mode-contact.jpg";
 import logo from "@/assets/images/home-logo.png";
 import Beastmode from "@/components/shared/beastmodehome";
 
+import Testimonial from "@/components/main/home/testimonial";
+
 function Home() {
   const carouselCardsData = [
     {
@@ -114,7 +116,9 @@ function Home() {
           <CarouselNext />
         </Carousel>
       </div>
+
       <ContactBanner bannerData={contactBannerData} button="Contact" />
+      <Testimonial />
     </div>
   );
 }

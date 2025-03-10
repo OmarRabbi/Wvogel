@@ -61,6 +61,7 @@ const Partnership = () => {
           </div>
         </div>
 
+
         <div className="flex flex-col justify-center items-center h-full">
           <h1 className="text-center  text-4xl font-light leading-[102%] max-w-xl mx-auto pt-20 ">
             Collaborate with a Legacy
